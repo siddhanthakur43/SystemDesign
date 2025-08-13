@@ -7,7 +7,7 @@ const Home = () => {
           <ul>
               <li><Link to='/shimmer-ui'>Shimmer UI</Link></li>
               <li><Link to='/infinite-scroll'>Infinite Scroll</Link></li>
-              <li><Link to='/pagination'>Pagination</Link></li>
+              <li><Link to='/search-bar'>Search Bar</Link></li>
               <li><Link to='/multi-language'>Infinite Scroll</Link></li>
               <li><Link to='/accordian'>Shimmer UI</Link></li>
               <li><Link to='/nested-comments'>Infinite Scroll</Link></li>
