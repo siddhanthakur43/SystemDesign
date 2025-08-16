@@ -4,6 +4,7 @@ import Memes from './components/Shimmer/Memes'
 import InfiniteScroll from './components/InfiniteScroll/InfiniteScroll'
 import SearchBar from './components/SearchBar/SearchBar'
 import Pagination from './components/Pagination/Pagination'
+import MultiLanguage from './components/MultiLanguage/MultiLanguage'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
           <Route path='/infinite-scroll' element={<InfiniteScroll />} />
           <Route path='/search-bar' element={<SearchBar />} />
           <Route path='/pagination' element={<Pagination />} />
+          <Route path='/multi-language' element={<MultiLanguage />} />
         </Routes>
       </BrowserRouter>
     </>
