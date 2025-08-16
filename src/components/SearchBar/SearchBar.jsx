@@ -3,9 +3,14 @@ import React, { useEffect, useState } from 'react'
 const SearchBar = () => {
     const [searchText, setSearchText] = useState('');
     const [result, setResults] = useState([]);
+    const [cache] = useState({});
 
     useEffect(() => {
-        fetchResult();
+        //debouncing
+        const s = setTimeout(() => {
+            fetchResult();
+        }, 300);
+        return () => clearTimeout(s);
     }, [searchText])
 
     const onOptionClick = (value) => {
@@ -14,10 +19,15 @@ const SearchBar = () => {
 
 
     const fetchResult = async () => {
+        if (cache[searchText]) {
+            setResults(cache[searchText]);
+        } else {
         const result = await fetch(`https://www.googleapis.com/customsearch/v1?key=${REACT_APP_GOOGLE_API_KEY}&cx=${REACT_APP_GOOGLE_CX_ID}&q=${encodeURIComponent(searchText)}`);
-        const json = await result.json();
+            const json = await result.json();
+            cache[searchText] = json.items;
         setResults(json.items)
         console.log(json, 'json');
+        }
     }
 
   return (
