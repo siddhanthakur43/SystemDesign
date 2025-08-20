@@ -10,6 +10,7 @@ const Home = () => {
         <li><Link to='/search-bar'>Search Bar</Link></li>
         <li><Link to='/pagination'>Pagination</Link></li>
         <li><Link to='/multi-language'>MultiLanguage</Link></li>
+        <li><Link to='/accordian'>Accordian</Link></li>
       </ul>
     </div>
   )

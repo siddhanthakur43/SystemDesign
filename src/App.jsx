@@ -5,6 +5,7 @@ import InfiniteScroll from './components/InfiniteScroll/InfiniteScroll'
 import SearchBar from './components/SearchBar/SearchBar'
 import Pagination from './components/Pagination/Pagination'
 import MultiLanguage from './components/MultiLanguage/MultiLanguage'
+import Accordian from './components/Accordian/Accordian'
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
           <Route path='/search-bar' element={<SearchBar />} />
           <Route path='/pagination' element={<Pagination />} />
           <Route path='/multi-language' element={<MultiLanguage />} />
+          <Route path='/accordian' element={<Accordian />} />
         </Routes>
       </BrowserRouter>
     </>
