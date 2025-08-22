@@ -11,6 +11,7 @@ const Home = () => {
         <li><Link to='/pagination'>Pagination</Link></li>
         <li><Link to='/multi-language'>MultiLanguage</Link></li>
         <li><Link to='/accordian'>Accordian</Link></li>
+        <li><Link to='/crud'>Crud</Link></li>
       </ul>
     </div>
   )

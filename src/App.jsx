@@ -6,6 +6,7 @@ import SearchBar from './components/SearchBar/SearchBar'
 import Pagination from './components/Pagination/Pagination'
 import MultiLanguage from './components/MultiLanguage/MultiLanguage'
 import Accordian from './components/Accordian/Accordian'
+import Crud from './components/CRUD/Crud'
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <Route path='/pagination' element={<Pagination />} />
           <Route path='/multi-language' element={<MultiLanguage />} />
           <Route path='/accordian' element={<Accordian />} />
+          <Route path='/crud' element={<Crud />} />
         </Routes>
       </BrowserRouter>
     </>
